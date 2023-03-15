@@ -77,7 +77,7 @@ void kingMoves();
 
 void pieceMoves(chess_board board[][MAX_ROW],int col, int row) {
 
-    // TODO zmienic kolejnosc tak, zeby A1 wybieralo kolumne A i szlo rzedem do gory, a nie na odwrot
+    // TODO change order, to work correctly
 
     switch (board[col][row].piece.type) {
         case NONE:
