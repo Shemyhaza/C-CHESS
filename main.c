@@ -88,10 +88,10 @@ void pawnMoves(chess_board board[][MAX_ROW], int col, int row) {
     int illegal_row_second = mov_row > row + 1;
     int first_turn = row == 1;
     if (illegal_column || illegal_row && first_turn) {
-        printf("\nNie mozna wykonac ruchu\n");
+        printf("\nIllegal move\n");
     }
     else if (illegal_column || illegal_row_second && !first_turn) {
-        printf("\nNie mozna wykonac ruchu\n");
+        printf("\nIllegal move\n");
     }
     else {
         board[mov_row][mov_col].piece.type = PAWN;
